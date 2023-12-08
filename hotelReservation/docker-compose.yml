@@ -15,7 +15,7 @@ services:
       - JAEGER_SAMPLE_RATIO
       - LOG_LEVEL
     build: .
-    image: nevenas/dsbhotel
+    image: hotel_reserv_profile_single_node
     entrypoint: frontend
     container_name: 'hotel_reserv_frontend'
     ports:
@@ -45,7 +45,7 @@ services:
       - JAEGER_SAMPLE_RATIO
       - LOG_LEVEL
     build: .
-    image: nevenas/dsbhotel
+    image: hotel_reserv_profile_single_node
     entrypoint: review
     container_name: 'hotel_reserv_review'
     depends_on:
